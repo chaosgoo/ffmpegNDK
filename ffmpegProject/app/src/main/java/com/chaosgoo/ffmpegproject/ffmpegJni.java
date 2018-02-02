@@ -3,12 +3,10 @@ package com.chaosgoo.ffmpegproject;
 /**
  * Created by Goo on 2018/2/1.
  */
-import android.util.Log;
 
-/**
- * Created by mqstack on 2015/11/23.
- */
 public class ffmpegJni {
+
+    public native int run(String[] commands);
 
     static {
         System.loadLibrary("avutil");
@@ -20,18 +18,4 @@ public class ffmpegJni {
         System.loadLibrary("avdevice");
         System.loadLibrary("ffmpegjni");
     }
-    public native String avcodecinfo();
-    public native int run2(String[] commands);
-    public int ffmpegRunCommand(String command) {
-        if (command.isEmpty()) {
-            return 1;
-        }
-        String[] args = command.split("###");
-//        for (int i = 0; i < args.length; i++) {
-//            Log.d("ffmpeg-jni", args[i]);
-//        }
-        return run(args.length, args);
-    }
-
-    public native int run(int argc, String[] args);
 }
