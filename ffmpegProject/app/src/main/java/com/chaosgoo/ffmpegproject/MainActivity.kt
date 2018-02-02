@@ -1,5 +1,6 @@
 package com.chaosgoo.ffmpegproject
 
+import android.animation.ObjectAnimator
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -15,10 +16,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var f: ffmpegJni = ffmpegJni("/storage/emulated/0/aaa.mp3","/storage/emulated/0/zzz.pcm",progressBar)
+        var f = ffmpegJni("/storage/emulated/0/aaa.mp3","/storage/emulated/0/zzz.pcm",progressBar)
         f!!.init()
         test_btn.setOnClickListener( View.OnClickListener {
-              f!!.decode()
+            f!!.decode()
         })
     }
 }

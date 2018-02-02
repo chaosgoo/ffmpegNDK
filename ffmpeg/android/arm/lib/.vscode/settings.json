@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "avformat.h": "c",
+        "internal.h": "c",
+        "postprocess.h": "c",
+        "stdbool.h": "c",
+        "swresample.h": "c",
+        "cpu.h": "c",
+        "opt.h": "c",
+        "log.h": "c"
+    }
+}

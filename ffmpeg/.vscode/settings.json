@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "fifo.h": "c",
+        "postprocess.h": "c",
+        "math.h": "c",
+        "swresample.h": "c"
+    }
+}

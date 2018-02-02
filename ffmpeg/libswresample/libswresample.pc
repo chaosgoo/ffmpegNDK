@@ -1,0 +1,14 @@
+prefix=/e/android/mixmusic/lib/ffmpeg-3.4.tar/ffmpeg/android/arm
+exec_prefix=${prefix}
+libdir=/e/android/mixmusic/lib/ffmpeg-3.4.tar/ffmpeg/android/arm/lib
+includedir=/e/android/mixmusic/lib/ffmpeg-3.4.tar/ffmpeg/android/arm/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 2.9.100
+Requires: 
+Requires.private: libavutil >= 55.78.100
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm
+Cflags: -I${includedir}

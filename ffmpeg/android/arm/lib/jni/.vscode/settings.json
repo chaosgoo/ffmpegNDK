@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "internal.h": "c",
+        "parseutils.h": "c",
+        "postprocess.h": "c"
+    }
+}
